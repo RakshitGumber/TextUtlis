@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+.my-nav-light {
+    background-color: $cyan-500;
+}
+
+.my-nav-dark {
+    background-color: $pink-500;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    span {
+        padding-left: 10px;
+    }
+}
+
+.light {
+    background-color: $cyan-500;
+}
+
+.dark {
+background-color: $pink-500;
+}
