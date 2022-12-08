@@ -54,7 +54,6 @@ const Navbar = (props) => {
                   Home
                 </a>
               </li>
-              <li className="nav-item"></li>
             </ul>
             <div className="form-check form-switch">
               <input
