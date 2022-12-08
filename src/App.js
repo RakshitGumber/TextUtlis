@@ -3,8 +3,8 @@ import "../node_modules/bootstrap/js/src/collapse";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import { useState } from "react";
-import About from "./components/About";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import About from "./components/About";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -23,17 +23,8 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<TextForm heading="Enter Text to Analyze" mode={mode} />}
-          />
-          <Route exact path="/about" element={<About />} />
-        </Routes>
-      </BrowserRouter>
+      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+      <TextForm heading="Enter Text to Analyze" mode={mode} />
     </>
   );
 }
